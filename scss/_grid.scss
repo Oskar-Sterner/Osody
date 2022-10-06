@@ -1,0 +1,32 @@
+@use "variables" as var;
+.item1 {
+    grid-area: start;
+    display: grid;
+}
+.item2 {
+    grid-area: about;
+}
+.item3 {
+    grid-area: projects;
+}
+.item4 {
+    grid-area: clients;
+}
+.item5 {
+    grid-area: contact;
+}
+.item6 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template:
+        'start start start start start start'
+        'about about about about about about'
+        'projects projects projects projects projects projects'
+        'clients clients clients clients clients clients'
+        'contact contact contact contact contact contact'
+        'footer footer footer footer footer footer';
+}

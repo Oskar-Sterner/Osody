@@ -1,0 +1,29 @@
+@use "variables" as var;
+#navbar-l {
+    position: absolute;
+    left: 26%;
+    top: 3%;
+    float: left;
+    a {
+        margin-left: 70px;
+    }
+}
+#navbar-img {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translate(-50%, -50%);
+    img{
+        width: 250px;
+    }
+}
+#navbar-r {
+    position: absolute;
+    left: 60%;
+    top: 3%;
+    a {
+        margin-right: 70px;
+    }
+}
+
+/* Dålig lösning, gör om i grid eller ul med 3 kolumner */
