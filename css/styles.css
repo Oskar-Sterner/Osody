@@ -10,6 +10,7 @@ body {
 .item1 {
   grid-area: start;
   display: grid;
+  height: 100vh;
 }
 
 .item2 {
@@ -38,35 +39,55 @@ body {
   grid-template: "start start start start start start" "about about about about about about" "projects projects projects projects projects projects" "clients clients clients clients clients clients" "contact contact contact contact contact contact" "footer footer footer footer footer footer";
 }
 
-#navbar-l {
-  position: absolute;
-  left: 26%;
-  top: 3%;
-  float: left;
+ul {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+  margin: 10px 0px 0px 0px;
+  columns: 5;
 }
-#navbar-l a {
-  margin-left: 70px;
+ul li {
+  margin: 0px 50px 0px 50px;
 }
-
-#navbar-img {
-  position: absolute;
-  left: 50%;
-  top: 4%;
-  transform: translate(-50%, -50%);
-}
-#navbar-img img {
+ul li img {
   width: 250px;
 }
-
-#navbar-r {
-  position: absolute;
-  left: 60%;
-  top: 3%;
+ul li a {
+  display: inline-block;
+  position: relative;
+  border-radius: 15px;
+  font-size: larger;
+  line-height: 54px;
+  transition: 200ms;
 }
-#navbar-r a {
-  margin-right: 70px;
+ul li a:hover {
+  cursor: pointer;
+  color: #00bfff;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 9;
+  left: 0;
+  background-color: #00bfff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Dålig lösning, gör om i grid eller ul med 3 kolumner */
+#hero {
+  background-image: url(../assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

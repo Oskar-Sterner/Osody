@@ -1,0 +1,10 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+#hero {
+    background-image: url(../assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}

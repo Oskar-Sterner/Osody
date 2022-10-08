@@ -1,29 +1,38 @@
 @use "variables" as var;
-#navbar-l {
-    position: absolute;
-    left: 26%;
-    top: 3%;
-    float: left;
-    a {
-        margin-left: 70px;
+@use "mixins" as m;
+ul{
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0px 0px 0px;
+    columns: 5;
+
+    li{
+        margin: 0px 50px 0px 50px;
+
+        img{
+            width: 250px;
+        }
+        a{
+            display: inline-block;
+            position: relative;
+            border-radius: 15px;
+            font-size: larger;
+            line-height: 54px;
+            transition: 200ms;
+            &:hover{
+                cursor: pointer;
+                color: var.$primary;
+            }
+            &:after{
+                @include m.a-after;
+            }
+            &:hover:after{
+                @include m.a-hover;
+            }
+        }
     }
-}
-#navbar-img {
-    position: absolute;
-    left: 50%;
-    top: 4%;
-    transform: translate(-50%, -50%);
-    img{
-        width: 250px;
-    }
-}
-#navbar-r {
-    position: absolute;
-    left: 60%;
-    top: 3%;
-    a {
-        margin-right: 70px;
-    }
+    
 }
 
 /* Dålig lösning, gör om i grid eller ul med 3 kolumner */
