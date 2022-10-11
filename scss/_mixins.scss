@@ -1,11 +1,11 @@
 @use "variables" as var;
 
-@mixin a-hover{
+@mixin a-hover {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-@mixin a-after{
+@mixin a-after {
     content: '';
     position: absolute;
     width: 100%;
@@ -16,4 +16,35 @@
     background-color: var.$primary;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+}
+
+@mixin panel-1{
+    width: 70%;
+    height: 600px;
+    background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat,
+            radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat,
+            radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat,
+            radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat,
+            linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat,
+            linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat,
+            #00bfff;
+    border-radius: 25px;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 25px;
+    transition: 300ms;
+    &:hover{
+        background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat,
+            radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat,
+            radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat,
+            radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat,
+            linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat,
+            linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat,
+            #00bfff;
+            -webkit-box-shadow: 0px 0px 65px -10px rgba(0,191,255,1);
+            -moz-box-shadow: 0px 0px 65px -10px rgba(0,191,255,1);
+            box-shadow: 0px 0px 65px -10px rgba(0,191,255,1);
+    }
+    
 }

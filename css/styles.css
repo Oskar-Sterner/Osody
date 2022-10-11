@@ -7,6 +7,10 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .item1 {
   grid-area: start;
   display: grid;
@@ -45,6 +49,7 @@ ul {
   list-style-type: none;
   margin: 10px 0px 0px 0px;
   columns: 5;
+  padding-inline-start: 0px;
 }
 ul li {
   margin: 0px 50px 0px 50px;
@@ -88,6 +93,391 @@ ul li a:hover:after {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+#hero-content {
+  margin-top: 35vh;
+}
+#hero-content .input-wrapper {
+  display: block;
+  font-size: 625%;
+  width: 80%;
+  margin: 0 auto;
+}
+#hero-content .input-wrapper > input,
+#hero-content .input-wrapper > .placeholder {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+#hero-content .input-wrapper > .placeholder {
+  pointer-events: none;
+}
+#hero-content .input-wrapper > .placeholder::before {
+  content: "​";
+  content: "​"/"OSODY STUDIOS";
+  alt: "OSODY STUDIOS";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 7.6s linear 1s infinite forwards;
+}
+#hero-content .input-wrapper > .placeholder::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 8px solid currentColor;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+  color: #00bfff;
+}
+@keyframes typed-0 {
+  0%, 0.8761929825% {
+    content: "​O";
+    content: "​O"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  0.8771929825%, 1.7533859649% {
+    content: "​OS";
+    content: "​OS"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  1.7543859649%, 2.6305789474% {
+    content: "​OSO";
+    content: "​OSO"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  2.6315789474%, 3.5077719298% {
+    content: "​OSOD";
+    content: "​OSOD"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  3.5087719298%, 4.3849649123% {
+    content: "​OSODY";
+    content: "​OSODY"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  4.3859649123%, 5.2621578947% {
+    content: "​OSODY ";
+    content: "​OSODY "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  5.2631578947%, 6.1393508772% {
+    content: "​OSODY S";
+    content: "​OSODY S"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  6.1403508772%, 7.0165438596% {
+    content: "​OSODY ST";
+    content: "​OSODY ST"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  7.0175438596%, 7.8937368421% {
+    content: "​OSODY STU";
+    content: "​OSODY STU"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  7.8947368421%, 8.7709298246% {
+    content: "​OSODY STUD";
+    content: "​OSODY STUD"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  8.7719298246%, 9.648122807% {
+    content: "​OSODY STUDI";
+    content: "​OSODY STUDI"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  9.649122807%, 10.5253157895% {
+    content: "​OSODY STUDIO";
+    content: "​OSODY STUDIO"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  10.5263157895%, 29.648122807% {
+    content: "​OSODY STUDIOS";
+    content: "​OSODY STUDIOS"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  29.649122807%, 30.349877193% {
+    content: "​OSODY STUDIO";
+    content: "​OSODY STUDIO"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  30.350877193%, 31.0516315789% {
+    content: "​OSODY STUDI";
+    content: "​OSODY STUDI"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  31.0526315789%, 31.7533859649% {
+    content: "​OSODY STUD";
+    content: "​OSODY STUD"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  31.7543859649%, 32.4551403509% {
+    content: "​OSODY STU";
+    content: "​OSODY STU"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  32.4561403509%, 33.1568947368% {
+    content: "​OSODY ST";
+    content: "​OSODY ST"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  33.1578947368%, 33.8586491228% {
+    content: "​OSODY S";
+    content: "​OSODY S"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  33.8596491228%, 34.5604035088% {
+    content: "​OSODY ";
+    content: "​OSODY "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  34.5614035088%, 35.2621578947% {
+    content: "​OSODY";
+    content: "​OSODY"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  35.2631578947%, 35.9639122807% {
+    content: "​OSOD";
+    content: "​OSOD"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  35.9649122807%, 36.6656666667% {
+    content: "​OSO";
+    content: "​OSO"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  36.6666666667%, 37.3674210526% {
+    content: "​OS";
+    content: "​OS"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  37.3684210526%, 38.0691754386% {
+    content: "​O";
+    content: "​O"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  38.0701754386%, 46.8411052632% {
+    content: "​";
+    content: "​"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  46.8421052632%, 47.7182982456% {
+    content: "​W";
+    content: "​W"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  47.7192982456%, 48.5954912281% {
+    content: "​WE";
+    content: "​WE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  48.5964912281%, 49.4726842105% {
+    content: "​WE ";
+    content: "​WE "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  49.4736842105%, 50.349877193% {
+    content: "​WE M";
+    content: "​WE M"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  50.350877193%, 51.2270701754% {
+    content: "​WE MA";
+    content: "​WE MA"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  51.2280701754%, 52.1042631579% {
+    content: "​WE MAK";
+    content: "​WE MAK"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  52.1052631579%, 52.9814561404% {
+    content: "​WE MAKE";
+    content: "​WE MAKE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  52.9824561404%, 53.8586491228% {
+    content: "​WE MAKE ";
+    content: "​WE MAKE "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  53.8596491228%, 54.7358421053% {
+    content: "​WE MAKE I";
+    content: "​WE MAKE I"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  54.7368421053%, 55.6130350877% {
+    content: "​WE MAKE IT";
+    content: "​WE MAKE IT"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  55.6140350877%, 56.4902280702% {
+    content: "​WE MAKE IT ";
+    content: "​WE MAKE IT "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  56.4912280702%, 57.3674210526% {
+    content: "​WE MAKE IT H";
+    content: "​WE MAKE IT H"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  57.3684210526%, 58.2446140351% {
+    content: "​WE MAKE IT HA";
+    content: "​WE MAKE IT HA"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  58.2456140351%, 59.1218070175% {
+    content: "​WE MAKE IT HAP";
+    content: "​WE MAKE IT HAP"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  59.1228070175%, 59.999% {
+    content: "​WE MAKE IT HAPP";
+    content: "​WE MAKE IT HAPP"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  60%, 60.8761929825% {
+    content: "​WE MAKE IT HAPPE";
+    content: "​WE MAKE IT HAPPE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  60.8771929825%, 79.999% {
+    content: "​WE MAKE IT HAPPEN";
+    content: "​WE MAKE IT HAPPEN"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  80%, 80.700754386% {
+    content: "​WE MAKE IT HAPPE";
+    content: "​WE MAKE IT HAPPE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  80.701754386%, 81.4025087719% {
+    content: "​WE MAKE IT HAPP";
+    content: "​WE MAKE IT HAPP"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  81.4035087719%, 82.1042631579% {
+    content: "​WE MAKE IT HAP";
+    content: "​WE MAKE IT HAP"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  82.1052631579%, 82.8060175439% {
+    content: "​WE MAKE IT HA";
+    content: "​WE MAKE IT HA"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  82.8070175439%, 83.5077719298% {
+    content: "​WE MAKE IT H";
+    content: "​WE MAKE IT H"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  83.5087719298%, 84.2095263158% {
+    content: "​WE MAKE IT ";
+    content: "​WE MAKE IT "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  84.2105263158%, 84.9112807018% {
+    content: "​WE MAKE IT";
+    content: "​WE MAKE IT"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  84.9122807018%, 85.6130350877% {
+    content: "​WE MAKE I";
+    content: "​WE MAKE I"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  85.6140350877%, 86.3147894737% {
+    content: "​WE MAKE ";
+    content: "​WE MAKE "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  86.3157894737%, 87.0165438596% {
+    content: "​WE MAKE";
+    content: "​WE MAKE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  87.0175438596%, 87.7182982456% {
+    content: "​WE MAK";
+    content: "​WE MAK"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  87.7192982456%, 88.4200526316% {
+    content: "​WE MA";
+    content: "​WE MA"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  88.4210526316%, 89.1218070175% {
+    content: "​WE M";
+    content: "​WE M"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  89.1228070175%, 89.8235614035% {
+    content: "​WE ";
+    content: "​WE "/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  89.8245614035%, 90.5253157895% {
+    content: "​WE";
+    content: "​WE"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  90.5263157895%, 91.2270701754% {
+    content: "​W";
+    content: "​W"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+  91.2280701754%, 100% {
+    content: "​";
+    content: "​"/"OSODY STUDIOS";
+    alt: "OSODY STUDIOS";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+#hero-content .input-wrapper > input:focus + .placeholder, #hero-content .input-wrapper > input:active + .placeholder {
+  display: none;
+}
+
+#about {
+  height: 800px;
+  text-align: center;
+}
+#about #about-content {
+  background-color: #151b26;
+  width: 70%;
+  height: 600px;
+  background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat, radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat, radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat, radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat, #00bfff;
+  border-radius: 25px;
+  padding: 7px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 25px;
+  transition: 300ms;
+}
+#about #about-content:hover {
+  background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat, radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat, radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat, radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat, #00bfff;
+  -webkit-box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
+  -moz-box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
+  box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
+}
+#about ul {
+  columns: 1;
+  width: 500px;
+  justify-content: center;
+  padding-inline-start: 0;
+  list-style-type: none;
+  text-align: start;
+  height: 100%;
+  display: block;
+}
+#about li img {
+  width: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
