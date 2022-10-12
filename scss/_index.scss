@@ -1,12 +1,31 @@
 @use "variables" as var;
+@use "mixins" as m;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var.$bg;
     color: var.$white;
     font-family: 'Noto Sans', sans-serif;
+    a, a:visited, a:hover, a:active {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    hr {
+        @include m.hr;
+    }
 }
 
-h1{
+h1 {
     font-size: 50px;
+}
+
+::marker {
+    color: var.$primary;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,191,255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,191,255,1);
+    box-shadow: 0px 0px 15px 0px rgba(0,191,255,1);
 }
