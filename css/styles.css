@@ -469,15 +469,24 @@ ul li a:hover:after {
 #about ul {
   columns: 1;
   width: 500px;
+  text-align: start;
   justify-content: center;
+  margin: 0 auto;
   padding-inline-start: 0;
   list-style-type: none;
-  text-align: start;
-  height: 100%;
-  display: block;
+  display: grid;
+  row-gap: 60px;
+  margin-top: 50px;
 }
-#about li img {
+#about ul li {
+  margin: 0 auto;
+}
+#about ul li img {
   width: 500px;
+}
+#about #about-text-list {
+  list-style-type: disc;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
