@@ -30,6 +30,35 @@ h1 {
   box-shadow: 0px 0px 15px 0px rgb(0, 191, 255);
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00bbff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  height: 20px !important;
+  background-color: #00bbff !important;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px !important;
+  background-color: transparent !important;
+}
+
 .item1 {
   grid-area: start;
   display: grid;
@@ -625,6 +654,15 @@ ul li a:hover:after {
   font-size: 25px;
   width: 610px;
   margin-top: 0px;
+}
+
+#projects {
+  height: 800px;
+  background-image: url(../assets/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

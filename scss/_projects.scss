@@ -1,0 +1,11 @@
+@use "mixins" as m;
+@use "variables" as var;
+
+#projects {
+    height: 800px;
+    background-image: url(../assets/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
