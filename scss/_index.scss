@@ -53,3 +53,47 @@ h1 {
     border-radius: 10px!important;
     background-color: transparent!important;
 }
+
+/* Shapedivider */
+
+.custom-shape-divider-top-1665662034 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1665662034 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1665662034 .shape-fill {
+    fill: #00BFFF;
+}
+
+.custom-shape-divider-bottom-1665662272 {
+    position: relative;
+    top: 18vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665662272 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1665662272 .shape-fill {
+    fill: #00BFFF;
+}

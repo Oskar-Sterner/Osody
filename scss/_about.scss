@@ -4,7 +4,7 @@ $total: 200;
 $time: 10s;
 
 #about {
-    height: 800px;
+    height: 850px;
     text-align: center;
 
     hr{
@@ -35,6 +35,7 @@ $time: 10s;
 
             img {
                 width: 500px;
+                object-fit: contain;
             }
         }
     }
