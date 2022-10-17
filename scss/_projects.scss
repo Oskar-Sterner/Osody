@@ -41,6 +41,39 @@ input[type=radio] {
     flex-direction: column;
     align-items: center;
 }
+
+#item-1-button {
+    @include m.button;
+    background-color: #8000b7;
+    bottom: 80px;
+    position: relative;
+    &:hover{
+        background-color: rgb(153, 0, 219);
+        box-shadow: 0px 0px 21px 5px rgba(153, 0, 219.1);
+    }
+}
+
+#item-2-button {
+    @include m.button;
+    background-color: #b70000;
+    bottom: 80px;
+    position: relative;
+    &:hover{
+        background-color: rgb(219, 0, 0);
+        box-shadow: 0px 0px 21px 5px rgb(219, 0, 0);
+    }
+}
+
+#item-3-button {
+    @include m.button;
+    background-color: #0068b7;
+    bottom: 80px;
+    position: relative;
+    &:hover{
+        background-color: rgb(0, 120, 219);
+        box-shadow: 0px 0px 21px 5px rgb(0, 124, 219);
+    }
+}
   
 .cards {
     position: relative;
