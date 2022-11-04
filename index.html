@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osody Studios</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/62ffc96575.js" crossorigin="anonymous"></script>
+    <!-- AniCollection.js library -->
+    <script defer src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script defer src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script defer src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+    <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel='stylesheet' href='https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/css/stylesheet.css'>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/script.js"></script>
@@ -38,8 +47,8 @@
                         <li><img src="assets/logo.png" alt="Logo"></li>
                         <li>
                             <ul id="about-text-list">
-                                <li>Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!</li>
-                                <li>Originally started in mid-pandemic 2020 as just a side project to earn a little extra cash, our agency was
+                                <li data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!</li>
+                                <li data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Originally started in mid-pandemic 2020 as just a side project to earn a little extra cash, our agency was
                                     slowly growing with expertise and people to provide our clients with top-of-the-line services.</li>
                             </ul>
                         </li>
@@ -73,9 +82,9 @@
                     </svg>
                 </div>
 
-                <h1>PROJECTS</h1>
+                <h1 data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">PROJECTS</h1>
             
-                <div class="container">
+                <div class="container" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">
                     <input type="radio" name="slider" id="item-1" checked>
                     <input type="radio" name="slider" id="item-2">
                     <input type="radio" name="slider" id="item-3">

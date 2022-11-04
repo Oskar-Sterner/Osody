@@ -715,6 +715,10 @@ ul li a:hover:after {
 }
 #projects h1 {
   letter-spacing: 5px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 input[type=radio] {
