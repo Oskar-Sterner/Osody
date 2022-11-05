@@ -654,55 +654,63 @@ ul li a:hover:after {
   }
 }
 #about {
-  height: 850px;
+  overflow-x: hidden;
+  height: 900px;
   text-align: center;
 }
-#about hr {
-  position: relative;
-  margin-top: -333px;
-}
 #about #about-content {
-  background-color: #151b26;
-  width: 70%;
-  height: 600px;
-  background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat, radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat, radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat, radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat, #00bfff;
-  border-radius: 25px;
-  padding: 7px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  border-radius: 25px;
-  transition: 300ms;
+  columns: 2;
+  justify-content: space-evenly;
+  display: flex;
 }
-#about #about-content:hover {
-  background: radial-gradient(circle at 100% 100%, #151b26 0, #151b26 20px, transparent 20px) 0% 0%/25px 25px no-repeat, radial-gradient(circle at 0 100%, #151b26 0, #151b26 20px, transparent 20px) 100% 0%/25px 25px no-repeat, radial-gradient(circle at 100% 0, #151b26 0, #151b26 20px, transparent 20px) 0% 100%/25px 25px no-repeat, radial-gradient(circle at 0 0, #151b26 0, #151b26 20px, transparent 20px) 100% 100%/25px 25px no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 10px) calc(100% - 50px) no-repeat, linear-gradient(#151b26, #151b26) 50% 50%/calc(100% - 50px) calc(100% - 10px) no-repeat, #00bfff;
-  -webkit-box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
-  -moz-box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
-  box-shadow: 0px 0px 65px -10px rgb(0, 191, 255);
+#about .about-spheres {
+  display: flex;
+  flex-direction: column;
 }
-#about ul {
-  columns: 1;
-  width: 500px;
-  text-align: start;
-  justify-content: center;
-  margin: 0 auto;
-  padding-inline-start: 0;
-  list-style-type: none;
-  display: grid;
-  row-gap: 60px;
+#about .about-spheres__image {
+  position: absolute;
+  z-index: 1001;
+  left: 165px;
+  top: 1300px;
+}
+#about .about-spheres__image img {
+  width: 600px;
+}
+#about .about-spheres__first img {
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 50px;
+  margin-right: 100px;
+}
+#about .about-spheres__second img {
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 100px;
+  margin-left: 100px;
+}
+#about .about-spheres__third img {
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 150px;
+  margin-right: 150px;
+}
+#about .about-spheres__fourth img {
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 200px;
+}
+#about .about-spheres li {
+  margin-bottom: 20px;
+}
+#about .about-text-list {
   margin-top: 50px;
-}
-#about ul li {
-  margin: 0 auto;
-}
-#about ul li img {
+  display: flex;
+  flex-direction: column;
   width: 500px;
-  object-fit: contain;
-}
-#about #about-text-list {
+  text-align: left;
   list-style-type: disc;
   font-size: 25px;
-  width: 610px;
-  margin-top: 0px;
+  row-gap: 100px;
 }
 
 #projects {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osody Studios</title>
+    <link rel="shortcut icon" type="image/png" href="assets/fav.png"/>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/62ffc96575.js" crossorigin="anonymous"></script>
     <!-- AniCollection.js library -->
@@ -42,19 +43,24 @@
         <section class="item2">
             <article id="about">   
                 <h1>ABOUT US</h1>
-                <article id="about-content">
-                    <ul>
-                        <li><img src="assets/logo.png" alt="Logo"></li>
-                        <li>
-                            <ul id="about-text-list">
-                                <li data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!</li>
-                                <li data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Originally started in mid-pandemic 2020 as just a side project to earn a little extra cash, our agency was
-                                    slowly growing with expertise and people to provide our clients with top-of-the-line services.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <hr>
-                </article>
+                <ul id="about-content">
+                    <li>
+                        <ul class="about-spheres">
+                            <li class="about-spheres__image" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: $scrollReveal"><img src="assets/logo.png" alt="Logo"></li>
+                            <li class="about-spheres__first" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"><img src="assets/grbox.png" alt="sphere1"></li>
+                            <li class="about-spheres__second" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"><img src="assets/grbox.png" alt="sphere2"></li>
+                            <li class="about-spheres__third" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"><img src="assets/grbox.png" alt="sphere3"></li>
+                            <li class="about-spheres__fourth" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"><img src="assets/grbox.png" alt="sphere4"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="about-text-list">
+                            <li data-anijs="if: scroll, on: window, do: bounceInRight animated, before: $scrollReveal">Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!</li>
+                            <li data-anijs="if: scroll, on: window, do: bounceInRight animated, before: $scrollReveal">Originally started in mid-pandemic 2020 as just a side project to earn a little extra cash, our agency was
+                                slowly growing with expertise and people to provide our clients with top-of-the-line services.</li>
+                        </ul>
+                    </li>
+                </ul>
             </article>
             <div class="area" >
                 <ul class="circles">

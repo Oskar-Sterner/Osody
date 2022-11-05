@@ -1,48 +1,66 @@
 @use "mixins" as m;
 @use "variables" as var;
-$total: 200;
-$time: 10s;
 
 #about {
-    height: 850px;
+    overflow-x: hidden;
+    height: 900px;
     text-align: center;
-
-    hr{
-        position: relative;
-        margin-top: -333px;
+    #about-content{
+        columns: 2;
+        justify-content: space-evenly;
+        display: flex;
     }
-    
-    #about-content {
-        background-color: #151b26;
-        @include m.panel-1;
-    }
-
-    ul {
-        columns: 1;
-        width: 500px;
-        text-align: start;
-        justify-content: center;
-        margin: 0 auto;
-        padding-inline-start: 0;
-        list-style-type: none;
-        display: grid;
-        row-gap: 60px;
-        margin-top: 50px;
-
-        li {
-            margin: 0 auto;
-
-            img {
-                width: 500px;
-                object-fit: contain;
+    .about-spheres{
+        display: flex;
+        flex-direction: column;
+        &__image{
+            position: absolute;
+            z-index: 1001;
+            left: 165px;
+            top: 1300px;
+            img{
+                width: 600px;
             }
         }
+        &__first{
+            img{
+                @include m.sphere;
+                width: 50px;
+                margin-right: 100px;
+            }
+        }
+        &__second{
+            img{
+                @include m.sphere;
+                width: 100px;
+                margin-left: 100px;
+            }
+        }
+        &__third{
+            img{
+                @include m.sphere;
+                width: 150px;
+                margin-right: 150px;
+            } 
+        }
+        &__fourth{
+            img{
+                @include m.sphere;
+                width: 200px;
+            } 
+        }
+        li{
+           margin-bottom: 20px; 
+        }
     }
-    
-    #about-text-list {
+    .about-text-list{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        text-align: left;
         list-style-type: disc;
         font-size: 25px;
-        width: 610px;
-        margin-top: 0px;
+        row-gap: 100px;
     }
 }
