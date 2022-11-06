@@ -1,0 +1,258 @@
+@use "mixins" as m;
+@use "variables" as var;
+
+#clients {
+    overflow-x: hidden;
+    height: 70vh;
+    text-align: center;
+    .slider {
+        width: 100%;
+    }
+    .slider {
+        input {
+            display: none;
+        }
+    }
+    .testimonials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 400px;
+        margin-bottom: 20px;
+        perspective: 1000px;
+        overflow: hidden;
+        .item {
+            width: 450px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #00bfff;
+            position: absolute;
+            top: 0;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.4s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            user-select: none;
+            cursor: pointer;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                color: #ffa500;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 13px solid #0d1118;
+            }
+            p {
+                color: #fff;
+            }
+            h2 {
+                font-size: 14px;
+            }
+        }
+    }
+    .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label {
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #413B52;
+            margin: 7px;
+            transition-duration: 0.2s;
+        }
+    }
+    #t-1 {
+        &:checked {
+            ~ {
+                .dots {
+                    label[for="t-1"] {
+                        transform: scale(2);
+                        background-color: #fff;
+                    }
+                    label[for="t-2"] {
+                        transform: scale(1.5);
+                    }
+                }
+                .testimonials {
+                    label[for="t-3"] {
+                        transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+                        z-index: 2;
+                    }
+                    label[for="t-2"] {
+                        transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-5"] {
+                        transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-4"] {
+                        transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+                    }
+                    label[for="t-1"] {
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+    }
+    #t-2 {
+        &:checked {
+            ~ {
+                .dots {
+                    label[for="t-2"] {
+                        transform: scale(2);
+                        background-color: #fff;
+                    }
+                    label[for="t-1"] {
+                        transform: scale(1.5);
+                    }
+                    label[for="t-3"] {
+                        transform: scale(1.5);
+                    }
+                }
+                .testimonials {
+                    label[for="t-4"] {
+                        transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+                        z-index: 2;
+                    }
+                    label[for="t-3"] {
+                        transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-1"] {
+                        transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-5"] {
+                        transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+                    }
+                    label[for="t-2"] {
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+    }
+    #t-3 {
+        &:checked {
+            ~ {
+                .dots {
+                    label[for="t-3"] {
+                        transform: scale(2);
+                        background-color: #fff;
+                    }
+                    label[for="t-2"] {
+                        transform: scale(1.5);
+                    }
+                    label[for="t-4"] {
+                        transform: scale(1.5);
+                    }
+                }
+                .testimonials {
+                    label[for="t-5"] {
+                        transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+                        z-index: 2;
+                    }
+                    label[for="t-4"] {
+                        transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-2"] {
+                        transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-1"] {
+                        transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+                    }
+                    label[for="t-3"] {
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+    }
+    #t-4 {
+        &:checked {
+            ~ {
+                .dots {
+                    label[for="t-4"] {
+                        transform: scale(2);
+                        background-color: #fff;
+                    }
+                    label[for="t-3"] {
+                        transform: scale(1.5);
+                    }
+                    label[for="t-5"] {
+                        transform: scale(1.5);
+                    }
+                }
+                .testimonials {
+                    label[for="t-1"] {
+                        transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+                        z-index: 2;
+                    }
+                    label[for="t-5"] {
+                        transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-3"] {
+                        transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-2"] {
+                        transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+                    }
+                    label[for="t-4"] {
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+    }
+    #t-5 {
+        &:checked {
+            ~ {
+                .dots {
+                    label[for="t-5"] {
+                        transform: scale(2);
+                        background-color: #fff;
+                    }
+                    label[for="t-4"] {
+                        transform: scale(1.5);
+                    }
+                }
+                .testimonials {
+                    label[for="t-2"] {
+                        transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+                        z-index: 2;
+                    }
+                    label[for="t-1"] {
+                        transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+                        z-index: 3;
+                    }
+                    label[for="t-4"] {
+                        transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+                        z-index: 3;
+                        z-index: 4;
+                    }
+                    label[for="t-3"] {
+                        transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+                    }
+                    label[for="t-5"] {
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+    }
+    
+}

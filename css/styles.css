@@ -22,6 +22,9 @@ body hr {
   width: 600px;
   border: 1px solid #00bfff;
 }
+body h1 {
+  letter-spacing: 5px;
+}
 
 h1 {
   font-size: 50px;
@@ -86,7 +89,7 @@ h1 {
 
 .custom-shape-divider-bottom-1665662272 {
   position: relative;
-  top: 18vh;
+  top: 17.3vh;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -171,8 +174,8 @@ ul li a:after {
   width: 100%;
   transform: scaleX(0);
   height: 3px;
-  bottom: 9;
-  left: 0;
+  bottom: 6px;
+  left: 0px;
   background-color: #00bfff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
@@ -547,12 +550,12 @@ ul li a:hover:after {
 }
 
 .circles {
-  position: absolute;
-  top: 70px;
   left: 0;
+  top: -10px;
   width: 100%;
-  height: 91.5%;
+  height: 100vh;
   overflow: hidden;
+  position: absolute;
 }
 
 .circles li {
@@ -655,13 +658,14 @@ ul li a:hover:after {
 }
 #about {
   overflow-x: hidden;
-  height: 900px;
+  height: 100vh;
   text-align: center;
 }
 #about #about-content {
   columns: 2;
   justify-content: space-evenly;
   display: flex;
+  margin-top: 90px;
 }
 #about .about-spheres {
   display: flex;
@@ -671,7 +675,7 @@ ul li a:hover:after {
   position: absolute;
   z-index: 1001;
   left: 165px;
-  top: 1300px;
+  top: 1330px;
 }
 #about .about-spheres__image img {
   width: 600px;
@@ -722,7 +726,6 @@ ul li a:hover:after {
   text-align: center;
 }
 #projects h1 {
-  letter-spacing: 5px;
   width: 300px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -1053,6 +1056,354 @@ img {
 
 #wrapper-focus span:nth-child(5) {
   animation-delay: 750ms;
+}
+
+#clients {
+  overflow-x: hidden;
+  height: 70vh;
+  text-align: center;
+}
+#clients .slider {
+  width: 100%;
+}
+#clients .slider input {
+  display: none;
+}
+#clients .testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 400px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+#clients .testimonials .item {
+  width: 450px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #00bfff;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+#clients .testimonials .item ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffa500;
+}
+#clients .testimonials .item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 13px solid #0d1118;
+}
+#clients .testimonials .item p {
+  color: #fff;
+}
+#clients .testimonials .item h2 {
+  font-size: 14px;
+}
+#clients .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients .dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413B52;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+#clients #t-1:checked ~ .dots label[for=t-1] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#clients #t-1:checked ~ .dots label[for=t-2] {
+  transform: scale(1.5);
+}
+#clients #t-1:checked ~ .testimonials label[for=t-3] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#clients #t-1:checked ~ .testimonials label[for=t-2] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#clients #t-1:checked ~ .testimonials label[for=t-5] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+#clients #t-1:checked ~ .testimonials label[for=t-4] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#clients #t-1:checked ~ .testimonials label[for=t-1] {
+  z-index: 4;
+}
+#clients #t-2:checked ~ .dots label[for=t-2] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#clients #t-2:checked ~ .dots label[for=t-1] {
+  transform: scale(1.5);
+}
+#clients #t-2:checked ~ .dots label[for=t-3] {
+  transform: scale(1.5);
+}
+#clients #t-2:checked ~ .testimonials label[for=t-4] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#clients #t-2:checked ~ .testimonials label[for=t-3] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#clients #t-2:checked ~ .testimonials label[for=t-1] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+#clients #t-2:checked ~ .testimonials label[for=t-5] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#clients #t-2:checked ~ .testimonials label[for=t-2] {
+  z-index: 4;
+}
+#clients #t-3:checked ~ .dots label[for=t-3] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#clients #t-3:checked ~ .dots label[for=t-2] {
+  transform: scale(1.5);
+}
+#clients #t-3:checked ~ .dots label[for=t-4] {
+  transform: scale(1.5);
+}
+#clients #t-3:checked ~ .testimonials label[for=t-5] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#clients #t-3:checked ~ .testimonials label[for=t-4] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#clients #t-3:checked ~ .testimonials label[for=t-2] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+#clients #t-3:checked ~ .testimonials label[for=t-1] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#clients #t-3:checked ~ .testimonials label[for=t-3] {
+  z-index: 4;
+}
+#clients #t-4:checked ~ .dots label[for=t-4] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#clients #t-4:checked ~ .dots label[for=t-3] {
+  transform: scale(1.5);
+}
+#clients #t-4:checked ~ .dots label[for=t-5] {
+  transform: scale(1.5);
+}
+#clients #t-4:checked ~ .testimonials label[for=t-1] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#clients #t-4:checked ~ .testimonials label[for=t-5] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#clients #t-4:checked ~ .testimonials label[for=t-3] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+#clients #t-4:checked ~ .testimonials label[for=t-2] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#clients #t-4:checked ~ .testimonials label[for=t-4] {
+  z-index: 4;
+}
+#clients #t-5:checked ~ .dots label[for=t-5] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#clients #t-5:checked ~ .dots label[for=t-4] {
+  transform: scale(1.5);
+}
+#clients #t-5:checked ~ .testimonials label[for=t-2] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+#clients #t-5:checked ~ .testimonials label[for=t-1] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+#clients #t-5:checked ~ .testimonials label[for=t-4] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  z-index: 4;
+}
+#clients #t-5:checked ~ .testimonials label[for=t-3] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#clients #t-5:checked ~ .testimonials label[for=t-5] {
+  z-index: 4;
+}
+
+#contact {
+  overflow-x: hidden;
+  height: 85vh;
+  text-align: center;
+  background-image: url(../assets/bg3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Shape Top */
+  /* Shape bottom */
+}
+#contact h1 {
+  margin-block-start: 25px;
+  margin-block-end: 0px;
+}
+#contact .contact-panel {
+  border-radius: 25px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 500px;
+  width: 800px;
+  background-color: #0d1118;
+  flex-direction: column;
+}
+#contact .contact-panel .fa-solid {
+  margin-top: 25px;
+  font-size: 50px;
+}
+#contact form {
+  margin-top: 15px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  background-color: transparent;
+  background-image: none;
+}
+#contact form label {
+  margin-left: 120px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#contact form input[type=email] {
+  padding: 5px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  color: #0d1118;
+  background-color: #00bfff;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 5px;
+  margin-left: 120px;
+}
+#contact form input[type=email]:focus {
+  outline: none;
+  border: none;
+}
+#contact form textarea {
+  margin: 0 auto;
+  padding: 5px;
+  height: 150px;
+  width: 550px;
+  font-size: 18px;
+  color: #0d1118;
+  background-color: #00bfff;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 5px;
+}
+#contact form textarea:focus {
+  outline: none;
+  border: none;
+}
+#contact form input[type=submit] {
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+  font-size: 18px;
+  color: #0d1118;
+  background-color: #00bfff;
+  border-radius: 10px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  margin-left: 120px;
+  transition: 300ms;
+}
+#contact form input[type=submit]:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#contact .custom-shape-divider-top-1667753337 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+#contact .custom-shape-divider-top-1667753337 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+#contact .custom-shape-divider-top-1667753337 .shape-fill {
+  fill: #00BFFF;
+}
+#contact .custom-shape-divider-bottom-1667753491 {
+  position: relative;
+  bottom: -70px; /* Nice :) */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+#contact .custom-shape-divider-bottom-1667753491 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+#contact .custom-shape-divider-bottom-1667753491 .shape-fill {
+  fill: #00BFFF;
+}
+
+#footer {
+  overflow-x: hidden;
+  height: 30vh;
+  background-color: #00bfff;
+  color: #0d1118;
+  text-align: center;
+}
+#footer img {
+  margin-top: 30px;
+  width: 500px;
+}
+#footer p {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

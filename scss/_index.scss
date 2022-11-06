@@ -21,6 +21,9 @@ body {
     hr {
         @include m.hr;
     }
+    h1{
+        letter-spacing: 5px;
+    }
 }
 
 h1 {
@@ -82,7 +85,7 @@ h1 {
 
 .custom-shape-divider-bottom-1665662272 {
     position: relative;
-    top: 18vh;
+    top: 17.3vh;
     left: 0;
     width: 100%;
     overflow: hidden;

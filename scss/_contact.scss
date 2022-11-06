@@ -1,0 +1,139 @@
+@use "mixins" as m;
+@use "variables" as var;
+
+#contact {
+    overflow-x: hidden;
+    height: 85vh;
+    text-align: center;
+    background-image: url(../assets/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        margin-block-start: 25px;
+        margin-block-end: 0px;
+    }
+    .contact-panel{
+        border-radius: 25px;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        height: 500px;
+        width: 800px;
+        background-color: var.$bg;
+        flex-direction: column;
+        .fa-solid{
+            margin-top: 25px;
+            font-size: 50px;
+        }
+    }
+    form{
+        margin-top: 15px;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        background-color: transparent;
+        background-image: none;
+        label{
+            margin-left: 120px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        input[type=email]{
+            padding: 5px;
+            height: 30px;
+            width: 300px;
+            font-size: 18px;
+            color: var.$bg;
+            background-color: var.$primary;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            margin-left: 120px;
+            &:focus{
+                outline: none;
+                border: none;
+            }
+        }
+        textarea{
+            margin: 0 auto;
+            padding: 5px;
+            height: 150px;
+            width: 550px;
+            font-size: 18px;
+            color: var.$bg;
+            background-color: var.$primary;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            &:focus{
+                outline: none;
+                border: none;
+            }
+        }
+        input[type=submit]{
+            padding: 5px;
+            height: 30px;
+            width: 200px;
+            font-size: 18px;
+            color: var.$bg;
+            background-color: var.$primary;
+            border-radius: 10px;
+            border: none;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            margin-left: 120px;
+            transition: 300ms;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+
+    /* Shape Top */
+    .custom-shape-divider-top-1667753337 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1667753337 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 90px;
+    }
+    
+    .custom-shape-divider-top-1667753337 .shape-fill {
+        fill: #00BFFF;
+    }
+    
+    /* Shape bottom */
+    .custom-shape-divider-bottom-1667753491 {
+        position: relative;
+        bottom: -70px; /* Nice :) */
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1667753491 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 90px;
+    }
+    
+    .custom-shape-divider-bottom-1667753491 .shape-fill {
+        fill: #00BFFF;
+    }
+}
+

@@ -3,12 +3,13 @@
 
 #about {
     overflow-x: hidden;
-    height: 900px;
+    height: 100vh;
     text-align: center;
     #about-content{
         columns: 2;
         justify-content: space-evenly;
         display: flex;
+        margin-top: 90px;
     }
     .about-spheres{
         display: flex;
@@ -17,7 +18,7 @@
             position: absolute;
             z-index: 1001;
             left: 165px;
-            top: 1300px;
+            top: 1330px;
             img{
                 width: 600px;
             }
