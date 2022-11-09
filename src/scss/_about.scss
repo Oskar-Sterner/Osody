@@ -5,6 +5,9 @@
     overflow-x: hidden;
     height: 100vh;
     text-align: center;
+    ul{
+        margin-top: -190px;
+    }
     #about-content{
         columns: 2;
         justify-content: space-evenly;
@@ -15,10 +18,10 @@
         display: flex;
         flex-direction: column;
         &__image{
-            position: absolute;
+            position: relative;
             z-index: 1001;
-            left: 165px;
-            top: 1330px;
+            left: -5px;   
+            top: 320px;
             img{
                 width: 600px;
             }

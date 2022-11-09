@@ -15,11 +15,10 @@
     }
     .contact-panel{
         border-radius: 25px;
-        top: 10px;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 3%;
         height: 500px;
         width: 800px;
         background-color: var.$bg;
@@ -111,28 +110,6 @@
     }
     
     .custom-shape-divider-top-1667753337 .shape-fill {
-        fill: #00BFFF;
-    }
-    
-    /* Shape bottom */
-    .custom-shape-divider-bottom-1667753491 {
-        position: relative;
-        bottom: -70px; /* Nice :) */
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-bottom-1667753491 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 90px;
-    }
-    
-    .custom-shape-divider-bottom-1667753491 .shape-fill {
         fill: #00BFFF;
     }
 }

@@ -1,0 +1,40 @@
+@use "mixins" as m;
+@use "variables" as var;
+
+footer{
+    background-color: var.$primary;
+}
+#footer{
+    height: 300px;
+    background-color: var.$primary;
+    color: var.$bg;
+    text-align: center;
+    img{
+        margin-top: 30px;
+        width: 500px;
+    }
+    p{
+        margin-top: 50px;
+    }
+    /* Shape bottom */
+    .custom-shape-divider-bottom-1667753491 {
+        position: relative;
+        left: 0;
+        top: -30%;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1667753491 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 90px;
+    }
+    
+    .custom-shape-divider-bottom-1667753491 .shape-fill {
+        fill: #00BFFF;
+    }
+}

@@ -13,19 +13,19 @@
     <script defer src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
     <script defer src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
     <!-- AniCollection.css library -->
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://osody.se/aniJS/anicollection.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel='stylesheet' href='https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/css/stylesheet.css'>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/src/scss/main.scss">
     <!-- OG -->
     <meta property="og:type" content="site">
     <meta property="og:title" content="Osody Studios">
-    <meta property="og:description" content="Osody Studios">
+    <meta property="og:description" content="Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!">
     <meta property="og:url" content="https://osody.se/">
-    <meta property="og:image" content="https://osody.se/assets/fav.png">
+    <meta property="og:image" content="https://osody.se/assets/logo.png">
     <meta itemprop="name" content="Osody Studios">
     <meta itemprop="description" content="Osody studios is a design agency that specializes in web design and other graphical elements like logos and animations!">
-    <script defer src="js/script.js"></script>
+    <script defer src="/src/js/script.js"></script>
 </head>
 <body>
     <main class="grid-container">
@@ -255,7 +255,7 @@
                 <div class="contact-panel">
                     <h1>CONTACT</h1>
                     
-                    <form action="mailto:oskar.lr.sterner@gmail.com" method="get" id="contact" data-anijs="if: scroll, on: window, do: bounceInUp animated, before: scrollReveal" class="bounceInUp animated">
+                    <form id="contact" data-anijs="if: scroll, on: window, do: bounceInUp animated, before: scrollReveal" class="bounceInUp animated">
                         <label for="name">Email:</label>
                         <input type="email" id="email" name="email">
                         <label for="confirmationText">Message:</label>
@@ -263,6 +263,11 @@
                         <input type="submit" value="Send">
                     </form>
                 </div>
+            </article>
+        </section>
+        <!-- Footer -->
+        <section class="item6">
+            <article id="footer">
                 <div class="custom-shape-divider-bottom-1667753491">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -270,11 +275,6 @@
                         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                     </svg>
                 </div>
-            </article>
-        </section>
-        <!-- Footer -->
-        <section class="item6">
-            <article id="footer">
                 <footer>
                     <img src="assets/osody.png" alt="Branding">
                     <p>All rights reserved OSODY STUDIOS</p>
